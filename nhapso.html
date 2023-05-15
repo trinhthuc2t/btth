@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap1">
+<button onclick="nhan2()">Mulpiplication(*2)</button>
+<button onclick="chia2()">Division(/2)</button>
+<h2 id="kq">Kết quả</h2>
+<script>
+    function nhan2(){
+        let x = document.getElementById('nhap1').value;
+        let a = parseFloat(x);
+        let kqc = a*2;
+        document.getElementById('kq').innerHTML = "Kết quả: " + kqc
+    }
+    function chia2() {
+        let x = document.getElementById('nhap1').value;
+        let a = parseFloat(x);
+        let kqc = a / 2;
+        document.getElementById('kq').innerHTML = "Kết quả: " + kqc
+    }
+</script>
+</body>
+</html>
